@@ -1,0 +1,279 @@
+*{
+    margin: 0;
+    padding: 0; /* Configuração padrão para começar o CSS */
+    font-family: 'Roboto', sans-serif; /* trocar a fonte */
+    scroll-behavior: smooth;}
+
+
+ /* fazendo o cabeçalho da page */   
+.cabecalho{
+    width: 100%;
+    height: 120px;
+    background-color: #333;
+}
+
+.logo{
+    background-color: #b20000;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo h1{
+    color: #fff;
+}
+
+.navegacao {
+    background-color: #333;
+    width: 100%;
+    height: 40px;
+    
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none; /* tirar o underline que fica no texto */
+    font-weight: 700; /* deixar a fonte mais grossa*/
+}
+
+nav ul li a:hover {
+    text-decoration: underline; /* Quando o mouse passar por cima aparece o text-decoration*/
+}
+
+/* CSS do cabeçalho finalizado */
+
+/* começando a grade do curso*/
+.titulo{
+    display: flex; /* alinhar o titulo do curso*/
+    justify-content: center;
+    margin-top: 40px;
+
+}
+
+
+table {
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%; /* Defina a largura fixa desejada */
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    table-layout: fixed; /* Isso faz com que o tamanho das colunas seja fixo */
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+    overflow: hidden; /* Esconde o conteúdo que ultrapassar o tamanho da célula */
+    text-overflow: ellipsis; /* Adiciona "..." se o texto for muito longo */
+    white-space: nowrap; /* Evita que o texto quebre para a próxima linha */
+
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.carga-horaria{
+    display: flex;
+    justify-content: center; /* Centralizando a carga horaria*/
+    padding: 30px;
+}
+
+/* Finalizado o CSS da grade do curso */
+
+
+/* Começando a historia do curso*/
+main {
+    padding: 20px;
+    background-color: #b20000;
+}
+
+h2 {
+    color: #fff;
+    margin-top: 20px;
+}
+
+p {
+    color: #fff;
+    margin: 10px 0;
+    line-height: 1.6;
+}
+
+ul {
+    list-style-type: disc;
+    margin: 10px 0 20px 20px;
+    color: #fff;
+}
+.mercado-de-trabalho li {
+    color: #fff;
+}
+/* Finalizado o CSS da historia do curso*/
+
+/*CSS dos horarios*/
+
+#horarios h2 {
+    color: black;
+}
+
+table.horarios th,
+table.horarios td {
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+
+table.horarios th {
+    background-color: #b30000; /* Vermelho forte */
+    color: black;
+}
+
+table.horarios tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+table.horarios tr:hover {
+    background-color: #ddd;
+}
+
+/* Estilos para listas dentro das células da tabela */
+ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    color: black;
+}
+/*CSS dos horarios finalizado*/
+
+
+/*css dos professores*/
+.header-professor {
+    background-color: #cc0000; /* Vermelho forte */
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+#professores {
+    padding: 20px;
+    margin: 20px;
+    border-radius: 8px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#professores table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+#professores th, td {
+    border: 1px solid #cc0000; /* Borda da tabela */
+    padding: 10px;
+    text-align: left;
+}
+
+#professores th {
+    background-color: #b20000; /* Cabeçalho da tabela */
+    color: white;
+}
+/* finalizando css dos professores*/
+
+/* Fazendo o Css do formulario */
+.formulario {
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #fff; /* Fundo branco para o formulário */
+    border: 2px solid #b20000; /* Borda vermelha */
+    border-radius: 10px; /* Bordas arredondadas */
+    padding: 20px; /* Espaçamento interno */
+    max-width: 400px; /* Largura máxima do formulário */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra leve */
+}
+
+.formulario header h1 {
+    color: black; /* Cor do título */
+    text-align: center; /* Centraliza o título */
+}
+
+main {
+    margin-top: 20px; /* Espaçamento acima do formulário */
+}
+
+label {
+    display: block; /* Cada label ocupa uma linha */
+    margin-bottom: 5px; /* Espaçamento abaixo de cada label */
+    color: #fff; /* Cor vermelha para os labels */
+}
+
+input[type="text"],
+input[type="date"],
+input[type="tel"] {
+    width: 95%; /* Largura total */
+    padding: 10px; /* Espaçamento interno */
+    border: 1px solid #ccc; /* Borda padrão */
+    border-radius: 5px; /* Bordas arredondadas */
+    margin-bottom: 15px; /* Espaçamento abaixo de cada campo */
+}
+
+input[type="text"]:focus,
+input[type="date"]:focus,
+input[type="tel"]:focus {
+    border-color: #b20000; /* Borda vermelha ao focar */
+    outline: none; /* Remove a borda padrão do foco */
+}
+
+button {
+    background-color: #b20000; /* Fundo vermelho do botão */
+    color: #fff; /* Texto branco no botão */
+    border: none; /* Remove borda padrão */
+    padding: 10px; /* Espaçamento interno */
+    border-radius: 5px; /* Bordas arredondadas */
+    cursor: pointer; /* Muda o cursor ao passar sobre o botão */
+    width: 100%; /* Largura total do botão */
+}
+
+button:hover {
+    background-color: #a30000; /* Cor do botão ao passar o mouse */
+}
+/* CSS do Formulario finalizado*/
+
+/* Fazendo o rodape*/
+.footer {
+    background-color: #b20000; /* Cor de fundo vermelha */
+    color: #fff; /* Texto branco */
+    text-align: center; /* Centraliza o texto */
+    padding: 15px 0; /* Espaçamento vertical */
+    position: relative; /* Posição relativa */
+    bottom: 0; /* Alinha ao fundo */
+    width: 100%; /* Largura total */
+    margin-top: 30px; /* Espaçamento acima do footer */
+}
+
+.footer p {
+    margin: 5px 0; /* Espaçamento entre parágrafos */
+    font-size: 14px; /* Tamanho da fonte */
+}
+
+/*CSS FINALIZADO!!!! */
+
+
+
